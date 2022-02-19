@@ -1,1 +1,10 @@
+# basic options
+title: Title
+author: Joe Subbiani
+email: joe.subbiani@gmail.com
+description: Description
+github_username: JoeSubbi
+
+# build settings
+markdown: kramdown
 theme: jekyll-theme-dinky
