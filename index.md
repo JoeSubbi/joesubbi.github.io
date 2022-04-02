@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Index
+title: Joe Subbiani
+description: Exploring Code and Alternate Dimensions
 ---
 
-# Index
-
-stuff and more stuff
+# My Posts
+---
 
 <p>
     <ul>
@@ -17,4 +17,8 @@ stuff and more stuff
     </ul>
 </p>
 
-did my posts show?
+---
+
+# Contacts
+---
+ - email: joe.subbiani@gmail.com
