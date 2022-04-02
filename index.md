@@ -19,6 +19,6 @@ description: Exploring Code and Alternate Dimensions
 
 ---
 
-# Contacts
----
- - email: joe.subbiani@gmail.com
+### Contact
+
+You can email me at: joe.subbiani@gmail.com
