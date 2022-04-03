@@ -4,6 +4,10 @@ author: Joe Subbiani
 email: joe.subbiani@gmail.com
 description: Description
 github_username: JoeSubbi
+github:
+  public: true
+  is_project_page: false
+  owner_url: https://github.com/JoeSubbi
 
 # build settings
 markdown: kramdown

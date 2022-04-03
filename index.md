@@ -11,7 +11,7 @@ description: Exploring Code and Alternate Dimensions
     <ul>
     {% for post in site.posts %}
         <li>
-        <a href="{{ post.url }}" style="color:purple">{{ post.title }}</a> - {{ post.date }}
+        <a href="{{ post.url }}" style="color:purple">{{ post.title }}</a> - {{ post.day }}
         </li>
     {% endfor %}
     </ul>
