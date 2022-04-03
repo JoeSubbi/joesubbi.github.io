@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Final Year Dissertation: Developing 4D Geometry
+title: "Final Year Dissertation: Developing 4D Geometry"
 description: Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
 ---
 
