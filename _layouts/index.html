@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <!-- <link rel="stylesheet" type="text/css" href="../assets/extra_style.scss"> -->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,22 +17,23 @@
   <body>
     <div id="container">
       <div class="inner">
-
+        <div>
         <header>
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
+        </div>
         <section id="downloads" class="clearfix">
-          <!--
-          <a href="https://joesubbi.github.io/" id="logo" class="button"><span>Home Page</span></a>
-          -->
-          <div class="space"></div>
-          {% if page.github.public %}
-            <a href="{{ page.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          {% if site.show_downloads %}
+            <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
+            <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
           {% endif %}
-          <div class="space"></div>
-          {% if page.show_downloads %}
-            <a href="{{ page.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
+          {% if site.github.public %}
+            {% if site.github.is_project_page %}
+                  <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
+            {% else %}
+                  <a href="{{ site.github.owner_url }}" id="view-on-github" class="button"><span>View my GitHub</span></a>
+            {% endif %}
           {% endif %}
         </section>
         <hr>
