@@ -2,7 +2,12 @@
 layout: post
 title: "Final Year Dissertation: Developing 4D Geometry"
 description: Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
-date: 2022-04-02
+date: "2022-04-02"
+show_downloads: true
+github: 
+  public: true
+  zip_url: https://github.com/JoeSubbi/Investigation-into-4D-Shapes/archive/refs/heads/main.zip
+  repository_url: https://github.com/JoeSubbi/Investigation-into-4D-Shapes
 ---
 
 <div style="text-align: justify">

@@ -11,7 +11,7 @@ description: Exploring Code and Alternate Dimensions
     <ul>
     {% for post in site.posts %}
         <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}" style="color:purple">{{ post.title }}</a> - {{ post.date }}
         </li>
     {% endfor %}
     </ul>
@@ -19,6 +19,4 @@ description: Exploring Code and Alternate Dimensions
 
 ---
 
-### Contact
-
-You can email me at: joe.subbiani@gmail.com
+You can get in contact with me at: joe.subbiani@gmail.com
