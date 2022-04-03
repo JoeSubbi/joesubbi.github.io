@@ -24,11 +24,11 @@
         </header>
         <section id="downloads" class="clearfix">
           <a href="https://joesubbi.github.io/" id="view-on-github" class="button"><span>Home Page</span></a>
-
+          &nbsp
           {% if page.github.public %}
             <a href="{{ page.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
           {% endif %}
-
+          &nbsp
           {% if page.show_downloads %}
             <a href="{{ page.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
           {% endif %}
