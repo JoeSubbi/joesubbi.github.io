@@ -2,6 +2,7 @@
 layout: post
 title: "Final Year Dissertation: Developing 4D Geometry"
 description: Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
+date: 2022-04-02
 ---
 
 <div style="text-align: justify">
