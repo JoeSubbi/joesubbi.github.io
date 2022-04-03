@@ -4,7 +4,15 @@ title: "Final Year Dissertation: Developing 4D Geometry"
 description: Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
 ---
 
-For my final year at university I embarked on a year long project focussing on the development of a four dimensional renderer.
-The project is an investigation and evaluation into extensions to the 3D cross section of 4D geometry.
+<div style="text-align: justify">
+For my final year at university I embarked on a year long project focussing on the development of a four dimensional renderer written in Unity.
+The project was an investigation and evaluation into representing geometry through extensions to the 3D cross section.
 
-<object data="/assets/l4proj.pdf" width=650 height=525 type='application/pdf'></object>
+During the course of the project I built and rendered a series of 4D primitive shapes using ray marching. I developed a system to freely rotate these shapes without a risk of gimbal lock; and I built a series of extensions to the 3D cross section, each emphasising an aspect of geometry. I evaluated each extensions effectiveness at assisting users in interpreting the surface geometry, understanding a shapes rotation, and assisting users in manipulating this geometry.
+
+The dissertation discusses other literature (Chapter 2) and the results of the evaluation (Chapter 6). The project is summarised in the appendix and conclusion.
+</div>
+
+---
+
+<object data="/assets/l4proj.pdf" width=630 height=840 type='application/pdf'></object>
