@@ -1,6 +1,6 @@
 ---
 layout: default
-title: C# 4D Rotor Code
+title: C# 4D Bivector and Rotor Code
 ---
 
 {% highlight cs %}
