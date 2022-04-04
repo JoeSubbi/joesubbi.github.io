@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Final Year Dissertation: Developing 4D Geometry"
 github:
     public: true

@@ -18,7 +18,7 @@ description: Exploring Code and Alternate Dimensions
 
 ---
 
-# My Pages
+# My Projects
 
 <p>
     <ul>
@@ -41,7 +41,7 @@ description: Exploring Code and Alternate Dimensions
 <p>
     <ul>
         <li>
-        <a href="{{ '/rotor-code/' | absolute_url }}">4D Bivector and Rotor Code (C#)</a>
+        <a href="{{ '/code/rotor-code/' | absolute_url }}">4D Bivector and Rotor Code (C#)</a>
 
         </li>
     </ul>

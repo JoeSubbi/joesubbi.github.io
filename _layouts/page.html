@@ -4,5 +4,13 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
+  
+  {% if page.github.public %}
+    <p class="bottom-spacer">
+      <a href="{{ page.github.repo-link }}" id="view-on-github" class="button"><span>View on Github</span></a>
+      <a href="{{ page.github.zip-link }}" id="download-zip" class="button"><span>Download .zip</span></a>
+    </p>
+  {% endif %}
+
   {{ content }}
 </div>
