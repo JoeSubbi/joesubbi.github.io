@@ -18,6 +18,25 @@ description: Exploring Code and Alternate Dimensions
 
 ---
 
+# My Pages
+
+<p>
+    <ul>
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+        {% if node.title != null %}
+            {% if node.layout == "page" %}
+                <li>
+                <a href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</p>
+
+---
+
 # Code Snippets
 <p>
     <ul>
