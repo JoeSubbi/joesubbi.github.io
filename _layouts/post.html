@@ -5,6 +5,14 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
+  
+  {% if page.github.public %}
+    <p class="bottom-spacer">
+      <a href="{{ page.github.repo-link }}" id="view-on-github" class="button"><span>View on Github</span></a>
+      <a href="{{ page.github.zip-link }}" id="download-zip" class="button"><span>Download .zip</span></a>
+    </p>
+  {% endif %}
+
   {{ content }}
 </div>
 

@@ -1,6 +1,10 @@
 ---
 layout: post
 title: "Final Year Dissertation: Developing 4D Geometry"
+github:
+    public: true
+    repo-link: https://github.com/JoeSubbi/Investigation-into-4D-Shapes
+    zip-link: https://github.com/JoeSubbi/Investigation-into-4D-Shapes/archive/refs/heads/main.zip
 ---
 
 <h2 style="text-align: justify">
