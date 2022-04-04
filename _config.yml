@@ -1,14 +1,22 @@
-# basic options
-title: Subbiani
-author: Joe Subbiani
-email: joe.subbiani@gmail.com
-description: Description
-github_username: JoeSubbi
-github:
-  public: true
-  is_project_page: false
-  owner_url: https://github.com/JoeSubbi
+# Setup
+title:               Joe Subbiani
+tagline:             Exploring Code and Higher Dimensions
+description:         "A Github pages blog about the code I write. You can contact me via my email: joe.subbiani@gmail.com"
+url:                 https://joesubbi.github.io/
+baseurl:             ''
+paginate:            5
+permalink:           pretty
 
-# build settings
-markdown: kramdown
-theme: jekyll-theme-tactile
+# About/contact
+author:
+  name:              Joe Subbiani
+  github:            https://github.com/JoeSubbi
+  email:             joe.subbiani@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y

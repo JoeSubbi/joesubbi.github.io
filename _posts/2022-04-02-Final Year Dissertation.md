@@ -1,14 +1,11 @@
 ---
 layout: post
 title: "Final Year Dissertation: Developing 4D Geometry"
-description: Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
-day: "2022/04/02"
-show_downloads: true
-github: 
-  public: true
-  zip_url: https://github.com/JoeSubbi/Investigation-into-4D-Shapes/archive/refs/heads/main.zip
-  repository_url: https://github.com/JoeSubbi/Investigation-into-4D-Shapes
 ---
+
+<h2 style="text-align: justify">
+ Developing and Evaluating Extensions to the 3D Cross Section of 4D Geometry
+</h2>
 
 <div style="text-align: justify">
 For my final year at university I embarked on a year long project focussing on the development of a four dimensional renderer written in Unity.
@@ -21,4 +18,4 @@ The dissertation discusses other literature (Chapter 2) and the results of the e
 
 ---
 
-<object data="/assets/l4proj.pdf" width=630 height=840 type='application/pdf'></object>
+<object data="/assets/l4proj.pdf" width=720 height=980 type='application/pdf'></object>

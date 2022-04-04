@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About
 description: Lasted Updated 02/04/2022
 ---
 
