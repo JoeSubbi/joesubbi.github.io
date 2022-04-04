@@ -17,16 +17,13 @@ description: Exploring Code and Alternate Dimensions
 </p>
 
 ---
-<!--
-# My Pages
 
+# Code Snippets
 <p>
     <ul>
-    {% for page in site.pages %}
         <li>
-        <a href="{{ page.url }}" style="color:'#ffffff'">{{ page.title }}</a>
+        <a href="{{ '/rotor-code/' | absolute_url }}">C# 4D Rotor Code</a>
+
         </li>
-    {% endfor %}
     </ul>
 </p>
--->
