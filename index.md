@@ -4,19 +4,6 @@ title: Joe Subbiani
 description: Exploring Code and Alternate Dimensions
 ---
 
-# My Posts
-
-<p>
-    <ul>
-    {% for post in site.posts %}
-        <h3 style="display: flex; justify-content: space-between;"><a href="{{ post.url }}">{{ post.title }}</a>
-        <div style="font-size: 12pt; display: inline; text-align: right;">{{ post.date | date_to_string }}</div></h3>
-        <p style="text-align: justify; font-size: 13pt;">{{post.description}}</p>
-        <hr>
-    {% endfor %}
-    </ul>
-</p>
-
 # My Projects
 
 <p>
@@ -30,6 +17,19 @@ description: Exploring Code and Alternate Dimensions
                 <hr>
             {% endif %}
         {% endif %}
+    {% endfor %}
+    </ul>
+</p>
+
+# My Posts
+
+<p>
+    <ul>
+    {% for post in site.posts %}
+        <h3 style="display: flex; justify-content: space-between;"><a href="{{ post.url }}">{{ post.title }}</a>
+        <div style="font-size: 12pt; display: inline; text-align: right;">{{ post.date | date_to_string }}</div></h3>
+        <p style="text-align: justify; font-size: 13pt;">{{post.description}}</p>
+        <hr>
     {% endfor %}
     </ul>
 </p>
