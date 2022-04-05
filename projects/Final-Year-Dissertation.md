@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Final Year Dissertation: Developing 4D Geometry"
+description: "My final year university project focussing on the development and evaluation extensions to the 3D cross section of 4D geometry."
 github:
     public: true
     repo-link: https://github.com/JoeSubbi/Investigation-into-4D-Shapes
