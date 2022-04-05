@@ -9,13 +9,13 @@ description: Exploring Code and Alternate Dimensions
 <p>
     <ul>
     {% for post in site.posts %}
-        <h3><a href="{{ post.url }}">{{ post.title }}</a><div style="font-size: 12pt; display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;{{ post.date | date_to_string }}</div></h3>
-        <h5>{{post.description}}</h5>
+        <h3 style="display: flex; justify-content: space-between;"><a href="{{ post.url }}">{{ post.title }}</a>
+        <div style="font-size: 12pt; display: inline; text-align: right;">{{ post.date | date_to_string }}</div></h3>
+        <p style="text-align: justify; font-size: 13pt;">{{post.description}}</p>
+        <hr>
     {% endfor %}
     </ul>
 </p>
-
----
 
 # My Projects
 
@@ -26,14 +26,13 @@ description: Exploring Code and Alternate Dimensions
         {% if node.title != null %}
             {% if node.layout == "page" %}
                 <h3><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></h3>
-                <h5>{{ node.description }}</h5>
+                <p style="text-align: justify; font-size: 13pt;">{{ node.description }}</p>
+                <hr>
             {% endif %}
         {% endif %}
     {% endfor %}
     </ul>
 </p>
-
----
 
 <!--
 # Code Snippets
