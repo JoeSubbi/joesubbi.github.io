@@ -40,9 +40,15 @@ description: Exploring Code and Alternate Dimensions
 # Code Snippets
 <p>
     <ul>
-        <li>
-        <a href="{{ '/code/rotor-code/' | absolute_url }}">4D Bivector and Rotor Code (C#)</a>
-
-        </li>
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+        {% if node.title != null %}
+            {% if node.layout == "code" %}
+                <li>
+                <a href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
     </ul>
 </p>
