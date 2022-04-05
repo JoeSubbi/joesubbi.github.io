@@ -23,4 +23,4 @@ The dissertation discusses other literature (Chapter 2) and the results of the e
 
 ---
 
-<object data="/assets/l4proj.pdf" width=720 height=980 type='application/pdf'></object>
+<iframe style="width: 100%; height: 100vh; float: left" src = "/assets/l4proj.pdf" type='application/pdf'></iframe>
