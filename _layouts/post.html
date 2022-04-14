@@ -13,10 +13,6 @@ layout: default
     </p>
   {% endif %}
 
-  {% if page.logo %}
-    <img src="{{ site.baseurl }}/assets/{{ page.logo.path }}" alt={{page.logo.alt}} style="max-width: 100%;margin-left: auto;margin-right: auto;"/> 
-  {% endif %}
-
   {% if page.unity_dir %}
     <p center></p>
     <div style="position:relative;padding-bottom:56.25%; box-sizing: border-box;">
@@ -30,6 +26,10 @@ layout: default
   <br>
 
   {{ content }}
+
+  {% if page.logo %}
+    <img src="{{ site.baseurl }}/assets/{{ page.logo.path }}" alt={{page.logo.alt}} style="max-width: 100%;margin-left: auto;margin-right: auto;"/> 
+  {% endif %}
 </div>
 
 <!--
