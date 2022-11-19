@@ -1,10 +1,10 @@
 ---
 layout: default
 title: About
-description: Lasted Updated 02/04/2022
+description: Lasted Updated 18/11/2022
 ---
 
 # About
 
-I am Joe Subbiani. At the time of writing this I am a final year computer science student at the University of Glasgow.
-I started this site after completing my final year dissertation on the visualisation of four dimensional geometry, but I will likely expand this site with more content as I develop as a programmer.
+I am Joe Subbiani. I am a game developer at Climax Studios.
+I started this site after completing my final year dissertation at the University of Glasgow on the visualisation of four dimensional geometry, and am now using that project as a basis for my 4D game, currently in development.
