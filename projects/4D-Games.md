@@ -25,6 +25,7 @@ The Steam page is still yet to go live, but is in active development so stay tun
 </p>
 
 <img src="{{ '/assets/devlog/Shapes.png' | absolute_url }} " alt="shapes" style="max-width: 80%;margin-left: auto;margin-right: auto;"/>
+<img src="{{ '/assets/devlog/main_menu_blur.gif' | absolute_url }} " alt="main menu gif" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/chess-tutorial1.PNG' | absolute_url }} " alt="chess tutorial" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/chess_board_new.png' | absolute_url }} " alt="chess board" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/maze.png' | absolute_url }} " alt="maze" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
