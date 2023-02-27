@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "4D Games"
-description: "A PC game where you can explore the fourth dimension in a series of games including 4D Mazes and 4D Chess."
+description: "A PC game where you can manipulate and explore the fourth dimension in a series of games including 4D Mazes and 4D Chess."
 github:
     public: false
     repo-link: 
