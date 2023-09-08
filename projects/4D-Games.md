@@ -21,8 +21,8 @@ This game started from the remnants of my final year University Dissertation, bu
 In Summary, the game aims to allow more control than any other software over manipulating, and even creating 4D Geometry. Alongside this comes two challenging games: 4D Mazes and 4D Chess.
 </p>
 
-<p style="text-align: justify">
-Make sure to wishlist on <a href="https://store.steampowered.com/app/2264190/4D_Games/">Steam</a> and stay tuned for further development!
+<p style="text-align: center">
+<iframe src="https://store.steampowered.com/widget/2264190/" frameborder="0" width="646" height="190"></iframe>
 </p>
 
 <img src="{{ '/assets/devlog/Shapes.png' | absolute_url }} " alt="shapes" style="max-width: 80%;margin-left: auto;margin-right: auto;"/>
