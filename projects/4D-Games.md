@@ -22,7 +22,7 @@ In Summary, the game aims to allow more control than any other software over man
 </p>
 
 <p style="text-align: justify">
-Make sure to wishlist on <a href="">Steam</a> and stay tuned for further development!
+Make sure to wishlist on <a href="https://store.steampowered.com/app/2264190/4D_Games/">Steam</a> and stay tuned for further development!
 </p>
 
 <img src="{{ '/assets/devlog/Shapes.png' | absolute_url }} " alt="shapes" style="max-width: 80%;margin-left: auto;margin-right: auto;"/>
