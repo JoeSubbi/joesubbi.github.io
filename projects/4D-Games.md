@@ -27,6 +27,6 @@ In Summary, the game aims to allow more control than any other software over man
 
 <img src="{{ '/assets/devlog/Shapes.png' | absolute_url }} " alt="shapes" style="max-width: 80%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/main_menu_blur.gif' | absolute_url }} " alt="main menu gif" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
-<img src="{{ '/assets/devlog/chess-tutorial2.PNG' | absolute_url }} " alt="chess tutorial" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
+<img src="{{ '/assets/devlog/chess-tutorial2.png' | absolute_url }} " alt="chess tutorial" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/chess_board_new.png' | absolute_url }} " alt="chess board" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/maze_steam_screen_shot.png' | absolute_url }} " alt="maze" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
