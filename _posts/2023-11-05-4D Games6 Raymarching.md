@@ -2,15 +2,13 @@
 layout: post
 title: "4D Games: Problems with Ray Marching"
 description: "4D Games uses ray marching to render the 4D shapes. In this post I explain what I did to optimize my shaders, and solve some visual artefacts."
-logo: 
-  path: "title3.png"
-  alt: "4d-games-logo"
 ---
 
 - [What is Ray Marching](#what-is-ray-marching)
 - [4D Artefacts](#4d-artefacts)
   - [Valley Boosting](#valley-boosting)
 - [Optimizing the 4D Maze](#optimizing-the-4d-maze)
+  - [Using a Bounding Box](#using-a-bounding-box)
   - [Using a Minimum Required Step Distance](#using-a-minimum-required-step-distance)
   - [4D Ray Tracing](#4d-ray-tracing)
 
@@ -118,24 +116,96 @@ Now the 5-cell instantly vanishes when moved far enough along the W axis. No mor
 
 ## Optimizing the 4D Maze
 
-Improving the maze
+*Taking the maze from 5fps to 60fps*
 
-the maze can have hundreds to thousands of paths at once. Iterating over so many meant very slow performance
+<p style="text-align: justify">
+The 4D maze is made up of 4D-capsule paths. The larger mazes can have > 3000 paths. Even after culling paths on different slices, you still have to ray march over hundreds of paths about 100 times for every pixel, every frame. The performance wasn't looking too good... About 5fps at 100% resolution for the \(8^{4}\) maze and 30fps at 40% resolution...
+</p>
+
+### Using a Bounding Box
+
+<p style="text-align: justify">
+The first step to improve performance was to minimize the evaluations of the actual paths as much as possible. The first bunch of steps are essentially wasted marching towards a cube. It is only when the ray has entered the bounding cube do we need to start evaluating all the paths of a maze.
+</p>
+
+<p style="text-align: justify">
+The distance function of the maze was structured such that it would march towards a cube, and if inside of the cube, it would check the paths for the maze. This gave about a 10% improvement in performance.
+</p>
+
+```glsl
+GetDistance(float4 p)
+{
+    const float distanceToMaze = sdBox(p-_MazeBoundingBoxOffset, _MazeBoundingBoxOffset) - playerRadius;
+    if (distanceToMaze > SURF_DIST+0.1f) return distanceToMaze;
+
+    ...Player sphere and maze paths...
+
+    return d;
+}
+```
 
 ### Using a Minimum Required Step Distance
 
-started by implementing min step distances
+<p style="text-align: justify">
+Next I wanted to try reduce the amount of steps necessary for a good looking maze render. One common way to do this is to force a minimum step size to prevent wasted steps making very small progress.
+</p>
 
-before or after algorithm
+<p style="text-align: justify">
+The way I chose to implement this for the maze was to only use the minimum step size unless the previous step has put us in a position where we will now be within the surface distance.
+</p>
 
-boosted performance but not enough
+<p style="text-align: justify">
+As the ray marcher was now making more progress through the maze faster, I could reduce the value of MAX_STEPS. This worked decently, giving a small boost in performance, but not much.
+</p>
+
+```glsl
+// MAX_DIST: Maximum distance from the ray origin
+// SURF_DIST: distance from the surface before we consider ourselves "Touching" the surface
+// MAX_STEPS: Maximum number of times we can step forward along the ray
+// MIN_DIST: Minimum distance every step
+
+// ro: Ray Origin
+// rd: Ray Direction
+float Raymarch(float4 ro, float4 rd)
+{
+    float dO = 0.0; // Distance from Origin
+    float dS;       // Distance from Surface
+
+    for (float i = 0.0; i < MAX_STEPS; i++) {
+        float4 p = ro + rd * dO;
+        dS = GetDistance(p);
+        if (dS < SURF_DIST)
+        {
+            dO += dS;
+            break;
+        }
+        dS = max(dS, MIN_DIST);
+        dO += dS;
+        if (dS < SURF_DIST || dO > MAX_DIST) break;
+    }
+    return dO;
+}
+```
 
 ### 4D Ray Tracing
 
-Using ray tracing for the Maze
-
-60fps 100% resolution
+<p style="text-align: justify">
+Ultimately I settled on Ray Tracing for the maze which ended up being much easier than I expected. Ray tracing requires you to be able to calculate the intersection point of a ray through a shape. Commonly this is done with spheres and triangles. This process is much more complicated than creating arbitrary distance functions for ray marching. Fortunately, intersection functions already exist for cylinders/capsules and spheres, so recreating the maze was fairly straightforward.
+</p>
 
 <p style="text-align: justify">
-
+The maze using ray tracing now always runs above 60fps at 100% resolution for the \(8^{4}\) maze on my computer!
 </p>
+
+<p style="text-align: justify">
+I know this solution didn't really have a satisfying pay off for how to optimize ray marching for thousands of shapes, but I hope at the very least my attempts can help if you find yourself working on something similar.
+</p>
+
+<!--
+<center>
+    <video width="100%" controls>
+        <source src="/assets/devlog/maze_effect.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</center>
+-->
