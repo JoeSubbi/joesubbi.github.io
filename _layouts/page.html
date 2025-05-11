@@ -7,8 +7,12 @@ layout: default
   
   {% if page.github.public %}
     <p class="bottom-spacer">
+      {% if page.github.repo-link %}
       <a href="{{ page.github.repo-link }}" id="view-on-github" class="button"><span>View on Github</span></a>
+      {% endif %}
+      {% if page.github.zip-link %}
       <a href="{{ page.github.zip-link }}" id="download-zip" class="button"><span>Download .zip</span></a>
+      {% endif %}
     </p>
   {% endif %}
 

@@ -4,8 +4,6 @@ title: "4D Games"
 description: "A PC game where you can manipulate and explore the fourth dimension in a series of games including 4D Mazes and 4D Chess."
 github:
     public: false
-    repo-link: 
-    zip-link: 
 ---
 
 <p style="text-align: justify">
@@ -26,7 +24,7 @@ In Summary, the game aims to allow more control than any other software over man
 </p>
 
 <img src="{{ '/assets/devlog/Shapes.png' | absolute_url }} " alt="shapes" style="max-width: 80%;margin-left: auto;margin-right: auto;"/>
-<img src="{{ '/assets/devlog/main_menu_blur.gif' | absolute_url }} " alt="main menu gif" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
-<img src="{{ '/assets/devlog/chess-tutorial2.png' | absolute_url }} " alt="chess tutorial" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
+<img src="{{ '/assets/devlog/final_main_menu.png' | absolute_url }} " alt="main menu" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
+<img src="{{ '/assets/devlog/final_chess_menu.png' | absolute_url }} " alt="chess tutorial" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
 <img src="{{ '/assets/devlog/chess_board_new.png' | absolute_url }} " alt="chess board" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
-<img src="{{ '/assets/devlog/maze_steam_screen_shot.png' | absolute_url }} " alt="maze" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
+<img src="{{ '/assets/devlog/final_maze.png' | absolute_url }} " alt="maze" style="max-width: 90%;margin-left: auto;margin-right: auto;"/>
